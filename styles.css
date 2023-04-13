@@ -3,52 +3,79 @@
   padding: 0;
 }
 
+:root{
+  --clr-green: #B8CEC2;
+  --clr-melon: #F8E6CE;
+  --clr-pinkstick: #EBC8B4;
+  --clr-pimk: #FDB3A4;
+  --clr-skyblue: #adc9a2;
+}
+
 body{
+  background: #F8E6CE;
+}
+
+.header {
+  padding: 22px;
   display: flex;
+  max-width: 100%;
+  background: #B8CEC2;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
+}
+
+.h2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 5px;
   justify-content: center;
-  background: linear-gradient(#FFA5D8, #7EB9DB,  #91DDEA );
-  background-size:contain;
+  display: flex;
+  
 }
 
 .containerMenu{
-  height: 60px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* NAVAR */
 
 .nav{
   display: flex;
   gap: 15px;
-  background-color: black;
+  background-color: #adc9a2;
   padding: 10px;
   border-radius: 10px;
 }
 
 .link{
-  font-size: 80px;
+  font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 40%;
-  height: 70px;
-  width: 70PX;
+  height: 60px;
+  width: 60px;
   cursor: pointer;
   transition: 300ms ease-in-out;
 }
 
 .active{
-  background-color: aqua;
+  background-color: #EBC8B4;
   font-size: 40px;
-  box-shadow: 8px 8px 4px black;
+  box-shadow: 6px 6px 4px #f4d0bb;
 }
+
+/* SLIDER */
 
 .slider{
   width: 400px;
   margin: 50px auto 0;
   height: auto;
   overflow: hidden;
+  border-radius: 7%;
 }
 
 .slider ul{
@@ -87,7 +114,161 @@ body{
   display: flex;
   align-items: center;
 }
-.mensaje{
-  padding: 4rem;
-  overflow: hidden;
+
+.header img{
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
 }
+
+/* CIRCULO IMAGENES */
+
+.container-circulo{
+   display:flex;
+   width: 100%;
+   padding: 10px;
+   flex-wrap: wrap;
+   gap: 25px;
+}
+
+.container-imagen{
+  /* width: 40%; */
+  /*display:inline-block; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* text-align:center; */
+  /* padding: 100px; */
+}
+
+.container-imagen h2{
+  font-weight: 500;
+  text-align: center;
+}
+
+.circulo{    
+  width: 300PX;
+  border-radius: 50%;
+  border:2px solid  #fdad78;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ver-todo{
+  margin: 50px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.mensaje{
+  width: 300px;
+  height: 200px;
+  margin: 50px auto 0;
+  font-size: 30px;
+  background-color: #D1DBCD ;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+
+.button{
+  background:#FDB3A4 ;
+  text-decoration: none;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  color:  #f2f2f2;
+  font-weight: 700;
+}
+
+.contenedor-columna{
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  background: #adc9a2;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.container-index a{
+color: rgb(2, 2, 2);
+font-size: xx-large;
+}
+
+/*footer*/
+  .footer-menu ul {
+      margin: 0px;
+      padding: 0px;
+  }
+  .container-footer {
+      max-width: 1140px;
+  }
+  .copyright-area{
+    background: #202020;
+    padding: 25px 0;
+  }
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+  }
+  .copyright-text p a{
+    color: #ff5e14;
+    text-decoration: none;
+  }
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+    color: #ff5e14;
+  }
+  .footer-menu li a {
+    font-size: 14px;
+    color: #878787;
+    text-decoration: none;
+  }
+  .row-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .text-lg-left {
+    text-align: left !important;
+  }
+  .text-right {
+    text-align: right !important;
+  }
+  .col-xl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .d-lg-block {
+    display: block !important;
+  }
+  
+  .col-xl-6{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  .container-footer {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
